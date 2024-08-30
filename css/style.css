@@ -8,8 +8,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: black;
+    background-color: #E3E3E3;
 }
 
 .interface{
@@ -106,3 +110,29 @@ section.hero-site{
     font-size: 20px;
 }
 /* FIM HERO */
+
+/* VANTAGENS */
+section.vantagens{
+    padding: 80px 0;
+}
+.vantagens .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+.vantagens .itens-container .img-itens img{
+    max-width: 420px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 0 #3b1a01;  
+}
+.vantagens .itens-container .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.vantagens .itens-container .txt-itens h3 span {
+    font-weight: 200;
+}
+/* FIM VANTAGENS */
