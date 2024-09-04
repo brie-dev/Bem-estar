@@ -21,13 +21,18 @@ body{
     margin: 0 auto;
 }
 
-header .btn-contato button, .hero-site button{
+header .btn-contato button, .hero-site button, .frase button{
     font-size: 18px;
     background-color: transparent;
     border: 1px solid white;
     color: white;
     cursor: pointer;
     transition: .5s;
+}
+
+header .btn-contato button:hover, .hero-site button:hover, .frase button:hover{
+    background-color: white;
+    color: black;
 }
 /* FIM GERAL */
 
@@ -66,10 +71,6 @@ header .menu-desktop nav ul li a{
 header .btn-contato button{
     width: 140px;
     height: 50px;
-}
-header .btn-contato button:hover, .hero-site button:hover{
-    background-color: white;
-    color: black;
 }
 /* FIM HEADER */
 
@@ -183,5 +184,52 @@ section.saude{
 }
 /* FIM SAUDE */
 
-/*  */
+/* FRASE */
+section.frase{
+    height: 600px;
+    background-image: url(../imagens/frase.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+.frase > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.frase > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+.frase h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+.frase h3 span{
+    display: block;
+    font-weight: 700;
+}
+.frase p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+.frase button{
+    width: 220px;
+    height: 60px;
+}
 /* FIM */
