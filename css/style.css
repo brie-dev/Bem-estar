@@ -14,7 +14,7 @@ html{
 
 body{
     background-color: #E3E3E3;
-    height: 900vh;
+    /* height: 900vh; */
 }
 
 .interface{
@@ -51,7 +51,7 @@ header .interface{
     align-items: center;
 }
 header .logo img{
-    max-width: 65px;
+    max-width: 58px;
 }
 header .menu-desktop nav ul{
     list-style-type: none;
