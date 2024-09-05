@@ -44,6 +44,9 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+
+    transition: .5s;
+    z-index: 99;
 }
 header .interface{
     display: flex;
@@ -54,6 +57,35 @@ header .logo img{
     max-width: 50px;
     cursor: pointer;
 }
+
+/* ESTILO MENU DINAMICO */
+header .logo img.logo-preta{
+    display: none;
+}
+header.rolar{
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+header.rolar .menu-desktop nav ul li a{
+    color: black;
+}
+header.rolar .btn-contato button{
+    border: 1px solid black;
+    color: black;
+}
+header.rolar .btn-contato button:hover{
+    background-color: black;
+    color: white;
+}
+header.rolar .logo .logo-cor{
+    display: none;
+}
+header.rolar .logo .logo-preta{
+    display: block;
+}
+/* FIM ESTILO MENU DINAMICO */
+
 header .menu-desktop nav ul{
     list-style-type: none;
 }
