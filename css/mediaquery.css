@@ -4,6 +4,11 @@
     header .menu-desktop, header .btn-contato{
         display: none;
     }
+
+    /* BOTAO MENU MOBILE */
+    header .btn-menu-mob{
+        display: block;
+    }
 }
 @media screen and (max-width: 888px){
     /* HERO */
@@ -32,7 +37,7 @@
         box-shadow: 6px 6px 0 #3b1a01;  
     }
     .vantagens .itens-container .txt-itens p{
-        font-size: 20px;
+        /* font-size: 20px; */
         margin-bottom: 20px;
     }
     .vantagens .itens-container .txt-itens h3 span {
@@ -65,8 +70,11 @@
 
     /* FRASE */
     .frase h3{
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 40px;
+    }
+    .frase p{
+        font-size: 16px;
     }
     /* FIM FRASE */
 
@@ -84,8 +92,15 @@
     }
     .instrucoes .instru-box{
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
     }
     /* FIM COMO FUNCIONA */
+    /* RODAPÉ */
+    footer .middle-footer a{
+        font-size: 14px;
+    }
+    footer .bottom-footer p, a{
+        font-size: 14px;
+    }
 /* FIM MOBILE */
 }
