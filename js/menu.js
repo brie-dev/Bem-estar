@@ -22,3 +22,11 @@ document.addEventListener('click', ()=>{
 })
 //  FIM BOTÃO DO MENU
 // ----------------------------------------------------------
+// ANIMAÇÃO ABRIR E FECHAR MENU
+let menuMobile = document.querySelector('#menu-mobile')
+let body = document.querySelector('body')
+
+document.addEventListener('click', ()=>{
+    menuMobile.classList.toggle('abrir')
+    body.classList.toggle('no-overflow')
+})
